@@ -2,7 +2,7 @@ package ringbuffer
 
 type Data struct {
 	ID      string
-	Content []byte
+	Content *[]byte
 }
 
 var (
