@@ -1,3 +1,3 @@
-module github.com/csbakissmalta/sessionstore
+module github.com/csabakissmalta/sessionstore
 
 go 1.17
