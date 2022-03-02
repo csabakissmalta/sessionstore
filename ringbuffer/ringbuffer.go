@@ -25,6 +25,7 @@ func New(option ...Option) *RingBuffer {
 }
 
 func WithInAndOutBufferSize(bs int) Option {
+	IN_OUT_CHANNEL_BUFFER = bs
 	return func(rb *RingBuffer) {
 		rb.InBuffer = make(chan interface{}, bs)
 		rb.OutBuffer = make(chan interface{}, bs)
